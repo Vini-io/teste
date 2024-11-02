@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "@/components/nav";
 
 export const metadata: Metadata = {
   title: "Next",
@@ -9,18 +8,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly <{children: React.ReactNode}>){
 
-  const Items: string[] = ["sobre", "contato", "conta", "buscar"]
-
   return (
     <html lang="pt-br">
       <body>
-        <Nav itemsProps = {Items}  />
+        
         {children}
       </body>
     </html>
   );
 }
-
-
-https://instagram.fgyn18-1.fna.fbcdn.net/v/t51.29350-15/462663408_490191877352327_4849383457296693687_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fgyn18-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=X3yaj26KxC8Q7kNvgGy0NTL&_nc_gid=5da677a102bf4b908187ac76763edc9e&edm=APoiHPcBAAAA&ccb=7-5&ig_cache_key=MzQ3NzMwMDY2MDI2MjAyNzkzNQ%3D%3D.3-ccb7-5&oh=00_AYCfQVKlg_36zeUMmZAe7T7jC0tY84inkNrNpsJtTcA65Q&oe=671F723F&_nc_sid=22de04
-https://instagram.fgyn18-1.fna.fbcdn.net/v/t51.29350-15/463994782_912071407525578_5203885063270323857_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fgyn18-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=72TqqDRdpAwQ7kNvgFF7k76&_nc_gid=5423702e613e4a808971e323a816e6d0&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzQ4NDcyNTg0MzgxMzc3MDU5OA%3D%3D.3-ccb7-5&oh=00_AYBTWZpGctID3NZt8Ylx4ujIp9j_XFgp5JrSDQO-1cSytQ&oe=671F6890&_nc_sid=7a9f4b
